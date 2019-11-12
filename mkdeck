@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh go10.dsh | pdfdeck -sans Go-Regular -mono Go-Mono -pagesize 1920,1080 -stdout $* - > go10.pdf 
