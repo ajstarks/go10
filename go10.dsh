@@ -183,6 +183,7 @@ deck
 
 	slide bgcolor fgcolor
 		textfile "code/imports.go" 10 top 4 "mono"
+		hline 18 32 65 5 "red" 30
 	eslide
 
  	slide bgcolor fgcolor
@@ -198,9 +199,7 @@ deck
         line    10 50 90 50
     eslide
 
-	slide bgcolor fgcolor
-		textfile "code/imports.go" 10 top 4 "mono"
-	eslide
+	
 
 
 	slide bgcolor fgcolor
