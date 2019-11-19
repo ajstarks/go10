@@ -166,8 +166,8 @@ deck
 
 	mx=50
 	my=50
-	top=85
-	bot=17
+	top=90
+	bot=12
 	ts=4
 	ss=ts/2
 
@@ -179,6 +179,10 @@ deck
 
 	slide bgcolor fgcolor
 		image "images/rand.png" 50 50 528 298
+	eslide
+
+	slide bgcolor fgcolor
+		textfile "code/imports.go" 10 top 4 "mono"
 	eslide
 
  	slide bgcolor fgcolor
@@ -194,10 +198,14 @@ deck
         line    10 50 90 50
     eslide
 
+	slide bgcolor fgcolor
+		textfile "code/imports.go" 10 top 4 "mono"
+	eslide
+
 
 	slide bgcolor fgcolor
 		ctext "March 2010" mx top ts
-		image "images/svgo.png" 50 50 1920 1080 50
+		image "images/svgo.png" 50 50 1920 1080 60
 		clist mx bot ss
 			li "SVGo First Commit"
 		elist
@@ -205,7 +213,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "May 2011" mx top ts
-		image "images/svgplay1.png"	50 50 3432 1858 35
+		image "images/svgplay1.png"	50 50 3432 1858 45
 		clist mx bot ss
 			li "Sketching with Code"
 		elist
@@ -213,7 +221,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "September 2012" mx top ts
-		image "images/openvg.png" 50 50  1920 1080 50
+		image "images/openvg.png" 50 50  1920 1080 65
 		clist mx bot ss
 			li "OpenVG 2D Graphics on the Raspberry Pi"
 			li "cgo"
@@ -222,7 +230,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "July 2013" mx top ts
-		image "images/deck.png" 50 50  1920 1080 50
+		image "images/deck.png" 50 50  1920 1080 65
 		clist mx bot ss
 			li "Deck: a package for presentations"
 		elist
@@ -230,7 +238,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "April 2014" mx top ts
-		image "images/gc1.jpg" 50 50  2828 1594 35
+		image "images/gc1.jpg" 50 50  2828 1594 45
 		clist mx bot ss
 			li "First GopherCon"
 			li "Particpated in the Hack Day Lightning Talks"
@@ -239,7 +247,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "November 2015" mx top ts
-		image "images/dg2015.png" 50 50 1686 949 50
+		image "images/dg2015.png" 50 50 1686 949 60
 		clist mx bot ss
 			li "dotGo - Paris, invited by @davecheney"
 			li "First time speaking at a 'big' conference"
@@ -248,7 +256,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "April 2018" mx top ts
-		image "images/gothamgo.png"	50 50 1918 1131 50
+		image "images/gothamgo.png"	50 50 1918 1131 60
 		clist mx bot ss
 			li "Gotham Go 2018 - New York"
 		elist
@@ -256,7 +264,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "August 2018" mx top ts
-		image "images/gophercon2018.png" 50 50 1920 1080 50
+		image "images/gophercon2018.png" 50 50 1920 1080 60
 		clist mx bot ss
 			li "GopherCon 2018 - Denver"
 		elist
@@ -264,7 +272,7 @@ deck
 
 	slide bgcolor fgcolor
 		ctext "September 2018" mx top ts
-		image "images/decksh.png" 50 50 1920 1080 50
+		image "images/decksh.png" 50 50 1920 1080 60
 		clist mx bot ss
 			li "decksh: scripting for information displays"
 			li "dchart: charting package using deck markup"
