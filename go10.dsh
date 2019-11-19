@@ -11,12 +11,13 @@ deck
 		etext "@ajstarks"      95 92 1.5 "sans" "white"
 	eslide
 
-	slide bgcolor fgcolor
-		ctext "10 events over 10 years" 50 50 8
-	eslide
+//	slide bgcolor fgcolor
+//		ctext "10 events over 10 years" 50 50 8
+//	eslide
 
-	// Date, Event, Days between events
+	// Date, Event, Days since announcement
 	// 2019-11-10	Announcement	0
+    // 2019-11-12   Gruber Posting	2
 	// 2019-11-30	BBedit/TextWrangler	20
 	// 2010-03-05	SVGo	115
 	// 2011-05-11	Sketch	584
@@ -30,16 +31,17 @@ deck
 	// 2019-10-12	DuBois Visuals	3624
 	// 2019-11-10	Go at 10	3653
 
-	ly=40
+	ly=35
 	smin=5
 	smax=95
 	dmin=0
 	dmax=3655
 
-	ann		=	vmap	  0 dmin dmax smin smax
-	bbedit	=	vmap	 20	dmin dmax smin smax
-	svgo	=	vmap	115 dmin dmax smin smax
-	svgplay	=	vmap	584 dmin dmax smin smax
+	ann		=	vmap	  0  dmin dmax smin smax
+	gruber  =   vmap      2  dmin dmax smin smax
+	bbedit	=	vmap	 20	 dmin dmax smin smax
+	svgo	=	vmap	115  dmin dmax smin smax
+	svgplay	=	vmap	584  dmin dmax smin smax
 	openvg	=	vmap	1049 dmin dmax smin smax
 	deckpkg	=	vmap	1336 dmin dmax smin smax
 	gc1		=	vmap	1607 dmin dmax smin smax
@@ -59,7 +61,7 @@ deck
 	dcolor="gold"
 
 	slide bgcolor fgcolor
-		
+		ctext "Ten Years of Go" 50 85 5
 		rect 50 ly 87 2 linecolor 20
 		cop=100
 		circle ann		ly cr0 anncolor 50
@@ -90,8 +92,8 @@ deck
 		sl1=10
 		sl2=sl1+yskip
 		sl3=sl2+yskip
-		ts=1.2
-		ts0=ts*1.8
+		ts=1.4
+		ts0=ts*1.5
 		
 		ctext "Nov 2009"			ann dy2 ts0 "sans" anncolor
 		ctext "May 2011"			svgplay dy ts
@@ -154,6 +156,13 @@ deck
 		vline dubois	ly lly ts2 linecolor cop
 	eslide
 
+	slide bgcolor fgcolor
+		image "images/gruber-go.png" 50 50 1692 785 
+	eslide
+
+	slide bgcolor fgcolor
+		image "images/pike-talk.png" 50 50 1784 958 
+	eslide
 
 	mx=50
 	my=50
@@ -207,7 +216,7 @@ deck
 		image "images/openvg.png" 50 50  1920 1080 50
 		clist mx bot ts2
 			li "OpenVG 2D Graphics on the Raspberry Pi"
-			li "CGO!"
+			li "cgo"
 		elist
 	eslide
 
@@ -232,7 +241,7 @@ deck
 		ctext "November 2015" mx top ts
 		image "images/dg2015.png" 50 50 1686 949 50
 		clist mx bot ts2
-			li "dotGo - Paris, recommended by @davecheney"
+			li "dotGo - Paris, invited by @davecheney"
 			li "First time speaking at a 'big' conference"
 		elist
 	eslide
@@ -262,7 +271,6 @@ deck
 		elist
 	eslide
 
-	// Materials comparison
 	slide bgcolor fgcolor
 		cleft=25
 		cright=cleft+50
