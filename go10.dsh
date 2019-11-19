@@ -169,7 +169,7 @@ deck
 	top=85
 	bot=17
 	ts=4
-	ts2=ts/2
+	ss=ts/2
 
 	slide bgcolor fgcolor
 		ctext "November 20, 2009" mx my 3 "sans" "black"
@@ -198,15 +198,15 @@ deck
 	slide bgcolor fgcolor
 		ctext "March 2010" mx top ts
 		image "images/svgo.png" 50 50 1920 1080 50
-		clist mx bot ts2
-			li "SVGo Released"
+		clist mx bot ss
+			li "SVGo First Commit"
 		elist
 	eslide
 
 	slide bgcolor fgcolor
 		ctext "May 2011" mx top ts
 		image "images/svgplay1.png"	50 50 3432 1858 35
-		clist mx bot ts2
+		clist mx bot ss
 			li "Sketching with Code"
 		elist
 	eslide
@@ -214,7 +214,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "September 2012" mx top ts
 		image "images/openvg.png" 50 50  1920 1080 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "OpenVG 2D Graphics on the Raspberry Pi"
 			li "cgo"
 		elist
@@ -223,7 +223,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "July 2013" mx top ts
 		image "images/deck.png" 50 50  1920 1080 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "Deck: a package for presentations"
 		elist
 	eslide
@@ -231,7 +231,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "April 2014" mx top ts
 		image "images/gc1.jpg" 50 50  2828 1594 35
-		clist mx bot ts2
+		clist mx bot ss
 			li "First GopherCon"
 			li "Particpated in the Hack Day Lightning Talks"
 		elist
@@ -240,7 +240,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "November 2015" mx top ts
 		image "images/dg2015.png" 50 50 1686 949 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "dotGo - Paris, invited by @davecheney"
 			li "First time speaking at a 'big' conference"
 		elist
@@ -249,7 +249,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "April 2018" mx top ts
 		image "images/gothamgo.png"	50 50 1918 1131 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "Gotham Go 2018 - New York"
 		elist
 	eslide
@@ -257,7 +257,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "August 2018" mx top ts
 		image "images/gophercon2018.png" 50 50 1920 1080 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "GopherCon 2018 - Denver"
 		elist
 	eslide
@@ -265,7 +265,7 @@ deck
 	slide bgcolor fgcolor
 		ctext "September 2018" mx top ts
 		image "images/decksh.png" 50 50 1920 1080 50
-		clist mx bot ts2
+		clist mx bot ss
 			li "decksh: scripting for information displays"
 			li "dchart: charting package using deck markup"
 		elist
@@ -288,4 +288,99 @@ deck
 		image "images/plate27.png"                      cright my imw imh 30
 	eslide
 
+	slide bgcolor fgcolor
+		ctext "Ten Years of Go" 50 85 5
+		rect 50 ly 87 2 linecolor 20
+		cop=100
+		circle ann		ly cr0 anncolor 50
+		circle bbedit	ly cr linecolor  cop
+		circle svgo		ly cr linecolor  cop
+		circle svgplay	ly cr linecolor  cop
+		circle openvg	ly cr linecolor  cop
+		circle deckpkg	ly cr linecolor  cop
+		circle gc1		ly cr linecolor  cop
+		circle dotgo	ly cr linecolor  cop
+		circle gg		ly cr linecolor  cop
+		circle gc2		ly cr linecolor  cop
+		circle decksh	ly cr linecolor  cop
+		circle dubois	ly cr linecolor  cop
+		circle go10		ly cr0 dcolor 50
+
+		sl=15
+		dy=ly-5
+		dy2=ly-25
+
+		yskip=5
+
+		py0=ly-sl
+		py1=ly+sl
+		py2=py1+yskip
+		py3=py2+yskip
+
+		sl1=10
+		sl2=sl1+yskip
+		sl3=sl2+yskip
+		ts=1.4
+		ts0=ts*1.5
+		
+		ctext "Nov 2009"			ann dy2 ts0 "sans" anncolor
+		ctext "May 2011"			svgplay dy ts
+		ctext "Mar 2010"			svgo dy ts
+		ctext "Sep 2012"			openvg dy ts
+		ctext "Jul 2013"			deckpkg dy ts
+		ctext "Apr 2014"			gc1 dy ts
+		ctext "Nov 2015"			dotgo dy ts
+		ctext "Apr/Aug/Sep 2018"	gc2 dy ts
+		//ctext "Sep 2018"			decksh dy ts
+		ctext "Oct 2019"			dubois dy ts
+		ctext "Nov 2019"			go10 dy2 ts0 "sans" anncolor
+		
+		
+		image "images/Golang_go.png"		ann		py0 864 304 20
+		iy=ly+10
+		yskip=4
+		image "images/svgo.png"				svgo	iy 1920 1080 10
+		iy+=yskip
+		image "images/svgplay1.png"			svgplay	iy 3432 1858 6.5
+		iy+=yskip
+		image "images/openvg.png"			openvg	iy 1920 1080 10
+		iy+=yskip
+		image "images/deck.png"				deckpkg iy 1920 1080 10
+		iy+=yskip
+		image "images/gc1.jpg"				gc1		iy 2828 1594 7
+		iy+=yskip
+		image "images/dg2015.png"			dotgo	iy 1686 949 11
+		iy+=yskip
+		image "images/gothamgo.png"			gg		iy 1918 1131 10
+		iy+=yskip
+		image "images/gophercon2018.png"	gc2		iy 1920 1080 10
+		iy+=yskip
+		image "images/decksh.png"			decksh  iy 1920 1080 10
+		iy+=yskip
+		image "images/dubois.png"			dubois	iy 1920 1080 10
+		iy+=yskip
+		image "images/gopher10th-large.jpg" go10	py0 3537 1988 5
+
+		lly=5
+
+		vline svgo		ly lly ts2 linecolor cop
+		lly+=yskip
+		vline svgplay	ly lly ts2 linecolor cop
+		lly+=yskip
+		vline openvg	ly lly ts2 linecolor cop
+		lly+=yskip
+		vline deckpkg	ly lly ts2 linecolor cop
+		lly+=yskip
+		vline gc1		ly lly ts2 linecolor cop
+		lly+=yskip
+		vline dotgo		ly lly ts2 linecolor cop
+		lly+=yskip
+		vline gg		ly lly ts2 linecolor cop
+		lly+=yskip
+		vline gc2		ly lly ts2 linecolor cop
+		lly+=yskip
+		vline decksh	ly lly ts2 linecolor cop
+		lly+=yskip
+		vline dubois	ly lly ts2 linecolor cop
+	eslide
 edeck
